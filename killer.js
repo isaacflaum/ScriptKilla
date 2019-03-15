@@ -1,5 +1,5 @@
 const removeScripts = () => {
-	const scripts = document.getElementsByTagName('script');
+  const scripts = document.getElementsByTagName('script');
   for (var s in scripts) {
     try {
       scripts[s].parentNode.removeChild(scripts[s]);
