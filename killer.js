@@ -1,13 +1,13 @@
 const removeScripts = () => {
   const scripts = document.getElementsByTagName('script');
-  for (var s in scripts) {
+  for (let s in scripts) {
     try {
       scripts[s].parentNode.removeChild(scripts[s]);
     } catch (_) {}
   }
 }
 
-// remove 5 times as some scripts are resilient
-for (var i = 0; i < 5; i++) {
+// remove 10 times as some scripts are resilient
+for (let i = 0; i < 10; i++) {
   removeScripts();
 }
